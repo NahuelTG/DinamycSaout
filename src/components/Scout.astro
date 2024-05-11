@@ -1,0 +1,75 @@
+---
+import { Image } from "astro:assets";
+import Gatas from "../images/GatasAndinas.png";
+import Tesla from "../images/Tesla.jpg";
+import Tigres from "../images/Tigres.png";
+---
+
+<section class="container mx-fit py-20">
+  <div class="mx-10">
+    <h1 class="text-8xl font-bold mb-8 text-center">Felicidades!!!</h1>
+    <h2 class="text-3xl font-bold mb-8 text-center">Curiosidades de SCOUT</h2>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div>
+        <h3 class="text-2xl font-bold mb-4">Origen del término "SCOUT"</h3>
+        <p class="text-gray-700">
+          El término "SCOUT" proviene de la palabra escocesa "scout", que
+          significa "espía". Fue popularizado por el fundador del movimiento
+          scout, Lord Baden-Powell, quien lo utilizó para referirse a los
+          jóvenes exploradores.
+        </p>
+      </div>
+
+      <div>
+        <h3 class="text-2xl font-bold mb-4">El primer campamento scout</h3>
+        <p class="text-gray-700">
+          El primer campamento scout se realizó en la isla de Brownsea, en
+          Inglaterra, en 1907. Fue organizado por Lord Baden-Powell y contó con
+          la participación de 20 jóvenes, sentando las bases para lo que se
+          convertiría en el movimiento scout mundial.
+        </p>
+      </div>
+
+      <div>
+        <h3 class="text-2xl font-bold mb-4">La flor de lis</h3>
+        <p class="text-gray-700">
+          La flor de lis es el símbolo más reconocible del movimiento scout.
+          Representa la brújula, que indica el camino correcto, y las tres
+          virtudes del movimiento scout: deber para con Dios y la patria, ayudar
+          a los demás y obedecer la ley scout.
+        </p>
+      </div>
+
+      <div>
+        <h3 class="text-2xl font-bold mb-4">El saludo scout</h3>
+        <p class="text-gray-700">
+          El saludo scout consiste en levantar la mano derecha con los dedos
+          índice y medio extendidos, mientras que el pulgar cubre el meñique y
+          el anular. Este gesto simboliza la amistad y el respeto entre scouts.
+        </p>
+      </div>
+    </div>
+    <div class="flex mt-10 gap-6">
+      <Image
+        class="object-cover overflow-hidden rounded-full"
+        width={500}
+        height={130}
+        src={Tigres}
+        alt="Gatas Andinas"
+      /><Image
+        class="object-cover overflow-hidden rounded-full"
+        width={500}
+        height={230}
+        src={Tesla}
+        alt="Gatas Andinas"
+      /><Image
+        class="object-cover overflow-hidden rounded-full"
+        width={500}
+        height={230}
+        src={Gatas}
+        alt="Gatas Andinas"
+      />
+    </div>
+  </div>
+</section>
